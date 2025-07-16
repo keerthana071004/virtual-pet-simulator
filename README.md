@@ -38,20 +38,4 @@ Add aging and evolution system
 
 🙌 Acknowledgements
 Thanks to open-source contributors for pet sprites and icon sets.
-Inspired by classic Tamagotchi-style games
-
-
-
-
-
-
-
-
-
-
-
-Tools
-
-
-
-ChatGPT can make mistakes. Check important info. See Cookie
+Inspired by classic Tamagotchi-style game
