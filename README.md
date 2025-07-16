@@ -17,7 +17,7 @@ JavaScript – Game logic and interactions
 
 🚀 How to Run
 1.Clone or download this repository
-git clone https://github.com/your-username/virtual-pet-simulator.git
+git clone https://github.com/keerthana071004/virtual-pet-simulator 
 2.Open the index.html file in your browser
 3.Interact with your pet using the available buttons
 💡 No additional installations or dependencies required!
