@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Pet Simulator</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Achievements button -->
+    <button id="achievements-btn" title="Achievements">🏆</button>
+
+    <!-- Achievements panel -->
+    <div id="achievements-panel" class="hidden">
+        <h2>Achievements</h2>
+        <ul id="achievements-list"></ul>
+        <button id="close-achievements">Close</button>
+    </div>
+
+    <!-- Game title -->
+    <h1>Virtual Pet Simulator</h1>
+
+    <!-- Day-Night background layers -->
+    <div class="gradient-layer gradient-day active"></div>
+    <div class="gradient-layer gradient-evening"></div>
+    <div class="gradient-layer gradient-night"></div>
+
+    <!-- Emoji phase indicator -->
+    <div id="phase-indicator">☀️</div>
+
+    <!-- Main pet container -->
+    <div class="pet-container">
+        <!-- Pet visual -->
+        <div class="pet" id="pet"></div>
+
+        <!-- Status message -->
+        <div id="status-message"></div>
+
+        <!-- Stats display -->
+        <div class="stats">
+            <div class="stat">
+                <span>Hunger</span>
+                <div class="bar">
+                    <div class="fill" id="hunger-fill"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <span>Happiness</span>
+                <div class="bar">
+                    <div class="fill" id="happiness-fill"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <span>Energy</span>
+                <div class="bar">
+                    <div class="fill" id="energy-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="controls">
+            <button onclick="feedPet()" title="Feed">🍗<span class="progress-ring"></span></button>
+            <button onclick="playWithPet()" title="Play">🎾<span class="progress-ring"></span></button>
+            <button onclick="putToSleep()" title="Sleep">💤<span class="progress-ring"></span></button>
+        </div>
+    </div>
+
+    <!-- Main logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
